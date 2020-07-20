@@ -1,0 +1,18 @@
+<template id="discharged-cargo-Template">
+    <ons-page id="discharged-cargo">
+        {#view}
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center">
+               <div>{title}</div>
+               <div id="subtitle"></div>
+            </div>
+        </ons-toolbar>
+        {/view}
+        <ons-list class="discharged-cargo-list {swipe-component}">
+        {lazy-repeat-component}
+        </ons-list>
+    </ons-page>
+</template>

@@ -1,0 +1,18 @@
+<ons-list-item modifier="longdivider borderdivider" class="cursor-pointer" tappable>
+    <ons-row style="margin-bottom:5px">
+        <ons-col class="ellipsis font-bold">{cargoNumber}</ons-col>
+        <ons-col style="text-align:right;font-weight:200 font-bold">{loadingQuantity}/{packageType}</ons-col>
+    </ons-row>
+    <ons-row style="margin-bottom:5px">
+        <ons-col>{orderNumber}</ons-col>
+        <ons-col style="text-align:right;font-weight:200">{purchaseOrderNumber}</ons-col>
+    </ons-row>
+    <ons-row style="margin-bottom:5px">
+        <ons-col width="50%" class="ellipsis">{commodityName}</ons-col>
+        <ons-col width="50%" class="ellipsis" style="text-align:right;font-weight:200">{ssrNbr}</ons-col>
+    </ons-row>
+    <ons-row style="margin-bottom:5px">
+        <ons-col width="60%" class="ellipsis">{location}</ons-col>
+        <ons-col width="40%" class="ellipsis" style="text-align:right;font-weight:200">{dateTime}</ons-col>
+    </ons-row>
+</ons-list-item>

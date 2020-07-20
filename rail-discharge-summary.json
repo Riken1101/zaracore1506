@@ -1,0 +1,83 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/zodiac/cargo-mobile/discharge-loading-summary/page-detail",
+        "headers": {
+            "z.sessionToken": {
+                "equalTo": "8d7fd103-e36a-48ff-b7ca-c2db86299046"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json;charset=UTF-8",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*",
+            "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        },
+        "jsonBody": {
+            "status": 200,
+            "code": 0,
+            "content": {
+                "view": {
+                    "dischargedCargo": {
+                        "label": "loadingCargo",
+                        "validation": {
+                            "require": true
+                        }
+                    },
+                    "title": "Loading Summary"
+                },
+                "data": {
+                    "dischargedCargo": [{
+                            "cargoNumber": "RP119M1202",
+                            "commodityName": "ROLL",
+                            "consignee": "AJMA ROLL DISTURB",
+                            "orderNumber": "OR-98745621",
+                            "loadingQuantity": "1",
+                            "location": "SHED A.01",
+                            "packageType": "UNIT",
+                            "ssrNbr": "SSR74123670014",
+                            "purchaseOrderNumber": "PO-1214994",
+                            "marksandNumber": "",
+                            "dateTime": "05/22 19:55"
+                        },
+                        {
+                            "cargoNumber": "RP119M1203",
+                            "commodityName": "PULP",
+                            "consignee": "ABC PULP DISTRIBUTION",
+                            "orderNumber": "OR-98745621",
+                            "loadingQuantity": "50",
+                            "location": "SHED A.01",
+                            "packageType": "UNIT",
+                            "ssrNbr": "SSR74123670013",
+                            "purchaseOrderNumber": "PO-1214994",
+                            "marksandNumber": "SOFTWOOD RP11",
+                            "dateTime": "05/22 19:55"
+                        },
+                        {
+                            "cargoNumber": "RP11OTA",
+                            "commodityName": "PULP",
+                            "consignee": "AJMA PULP DISTURB",
+                            "orderNumber": "OR-98745621",
+                            "loadingQuantity": "50",
+                            "packageType": "UNIT",
+                            "location": "SHED A.02",
+                            "ssrNbr": "SSR74123670014",
+                            "purchaseOrderNumber": "PO-1214994",
+                            "marksandNumber": "SOFTWOOD RP11",
+                            "dateTime": "05/22 19:55"
+                        }
+                    ]
+                },
+                "swipe": {
+                    "rightAction": [{
+                        "className": "undo-discharged-cargo-summary",
+                        "icon": "fa-refresh"
+                    }]
+                }
+            }
+        }
+    }
+}
